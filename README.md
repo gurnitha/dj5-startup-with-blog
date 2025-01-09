@@ -31,3 +31,16 @@
         deleted:    .gitconfig
         modified:   README.md
         modified:   suorganizer/settings.py
+
+
+#### 3. Django Models and SQLite Database
+
+        new file:   .gitconfig
+        new file:   Chapter_03_Model_Managers_and_QuerySets.ipynb
+        modified:   blog/admin.py
+        new file:   blog/migrations/0001_initial.py
+        modified:   blog/models.py
+        modified:   organizer/admin.py
+        new file:   organizer/migrations/0001_initial.py
+        modified:   organizer/models.py
+        modified:   suorganizer/settings.py
