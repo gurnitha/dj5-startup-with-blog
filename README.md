@@ -90,3 +90,13 @@
         modified:   organizer/urls.py
         modified:   suorganizer/urls.py
         modified:   templates/base.html
+
+#### 7. Creating forms for user input
+
+        new file:   Chapter_07_Forms_in_Python.ipynb
+        new file:   Chapter_07_Model_Validation.ipynb
+        modified:   README.md
+        modified:   blog/admin.py
+        new file:   blog/forms.py
+        new file:   organizer/forms.py
+        new file:   organizer/migrations/0002_alter_newslink_pub_date_alter_startup_founded_date.py
