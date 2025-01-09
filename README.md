@@ -61,3 +61,14 @@
         modified:   suorganizer/settings.py
         modified:   suorganizer/urls.py
         new file:   templates/base.html
+
+#### 5. Django Views and Urls
+
+        modified:   README.md
+        new file:   blog/urls.py
+        modified:   blog/views.py
+        modified:   organizer/templates/organizer/startup_list.html
+        new file:   organizer/urls.py
+        modified:   organizer/views.py
+        modified:   suorganizer/urls.py
+        new file:   suorganizer/views.py
