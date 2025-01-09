@@ -25,3 +25,9 @@
         new file:   suorganizer/settings.py
         new file:   suorganizer/urls.py
         new file:   suorganizer/wsgi.py
+
+#### 2. Creating and integrating new apps
+
+        deleted:    .gitconfig
+        modified:   README.md
+        modified:   suorganizer/settings.py
