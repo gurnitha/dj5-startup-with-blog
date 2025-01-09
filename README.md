@@ -72,3 +72,21 @@
         modified:   organizer/views.py
         modified:   suorganizer/urls.py
         new file:   suorganizer/views.py
+
+#### 6. Integrating Models,Templates,Views,and URL Configurations to Create Links between Webpages 
+
+        new file:   Chapter_06_Reversing_URL_Patterns.ipynb
+        modified:   README.md
+        new file:   _db.sqlite3
+        modified:   blog/models.py
+        modified:   blog/templates/blog/post_detail.html
+        modified:   blog/templates/blog/post_list.html
+        modified:   blog/urls.py
+        modified:   organizer/models.py
+        modified:   organizer/templates/organizer/startup_detail.html
+        modified:   organizer/templates/organizer/startup_list.html
+        modified:   organizer/templates/organizer/tag_detail.html
+        modified:   organizer/templates/organizer/tag_list.html
+        modified:   organizer/urls.py
+        modified:   suorganizer/urls.py
+        modified:   templates/base.html

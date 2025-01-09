@@ -1,3 +1,4 @@
+from django.urls import reverse
 from django.db import models
 
 
@@ -18,6 +19,10 @@ class Tag(models.Model):
 
     def __str__(self):
         return self.name.title()
+
+    def get_absolute_url(self):
+        return reverse('organizer_tag_detail',
+                       kwargs={'slug': self.slug})
 
 
 class Startup(models.Model):
@@ -40,6 +45,10 @@ class Startup(models.Model):
 
     def __str__(self):
         return self.name
+
+    def get_absolute_url(self):
+        return reverse('organizer_startup_detail',
+                       kwargs={'slug': self.slug})
 
 
 class NewsLink(models.Model):

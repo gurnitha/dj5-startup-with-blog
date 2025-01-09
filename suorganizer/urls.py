@@ -23,7 +23,7 @@ from .views import redirect_root
 
 urlpatterns = [
     re_path(r'^$', redirect_root),
-    re_path(r'^admin/', admin.site.urls),
+    path('admin/', admin.site.urls),
     re_path(r'^blog/', include(blog_urls)),
     re_path(r'^', include(organizer_urls)),
 ]
