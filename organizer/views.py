@@ -1,3 +1,10 @@
 from django.shortcuts import render
 
-# Create your views here.
+from .models import Tag
+
+
+def homepage(request):
+    tag_list = Tag.objects.all()
+    context = {'tag_list':tag_list}
+    return render(request, 'organizer/tag_list.html', context)
+
