@@ -160,3 +160,28 @@
         CRUD + data
 
         :)
+
+#### 11. Bending the Rules: The Contact Us Webpage
+
+        modified:   blog/admin.py
+        new file:   contact/__init__.py
+        new file:   contact/forms.py
+        new file:   contact/templates/contact/base_contact.html
+        new file:   contact/templates/contact/contact_form.html
+        new file:   contact/tests.py
+        new file:   contact/urls.py
+        new file:   contact/views.py
+        modified:   organizer/migrations/0008_alter_newslink_pub_date_alter_startup_founded_date.py
+        new file:   organizer/urls/__init__.py
+        new file:   organizer/urls/newslink.py
+        new file:   organizer/urls/startup.py
+        new file:   organizer/urls/tag.py
+        modified:   suorganizer/settings.py
+        modified:   suorganizer/urls.py
+        modified:   templates/base.html
+
+        Note:
+
+        Contact message display on terminal only ...
+
+        :)
