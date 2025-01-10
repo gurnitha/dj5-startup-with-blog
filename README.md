@@ -116,3 +116,25 @@
         new file:   organizer/templates/organizer/tag_confirm_delete.html
         new file:   organizer/templates/organizer/tag_form.html
         new file:   organizer/templates/organizer/tag_form_update.html
+
+#### 9. Controlling Forms in Views
+
+        modified:   blog/models.py
+        modified:   blog/templates/blog/post_detail.html
+        modified:   blog/templates/blog/post_list.html
+        modified:   blog/urls.py
+        modified:   blog/views.py
+        modified:   organizer/admin.py
+        modified:   organizer/migrations/0002_alter_newslink_pub_date_alter_startup_founded_date.py
+        modified:   organizer/models.py
+        modified:   organizer/templates/organizer/startup_detail.html
+        modified:   organizer/templates/organizer/startup_list.html
+        modified:   organizer/templates/organizer/tag_detail.html
+        modified:   organizer/templates/organizer/tag_list.html
+        modified:   organizer/urls.py
+        new file:   organizer/utils.py
+        modified:   organizer/views.py
+
+        Note:
+
+        Can do CRUD. :)
