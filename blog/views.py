@@ -1,3 +1,5 @@
+from django.core.paginator import (
+    EmptyPage, PageNotAnInteger, Paginator)
 from django.shortcuts import (
     get_object_or_404, redirect, render)
 from django.views.decorators.http import \
@@ -66,13 +68,57 @@ def post_detail(request, year, month, slug):
         {'post': post})
 
 
+# class PostList(View):
+
+#     def get(self, request):
+#         return render(
+#             request,
+#             'blog/post_list.html',
+#             {'post_list': Post.objects.all()})
+
+
+# Adding pagination to post list
 class PostList(View):
+    page_kwarg = 'page'
+    paginate_by = 2  # 5 items per page
+    template_name = 'blog/post_list.html'
 
     def get(self, request):
+        post_list = Post.objects.all()
+        paginator = Paginator(
+            post_list, self.paginate_by)
+        page_number = request.GET.get(
+            self.page_kwarg)
+        try:
+            page = paginator.page(page_number)
+        except PageNotAnInteger:
+            page = paginator.page(1)
+        except EmptyPage:
+            page = paginator.page(
+                paginator.num_pages)
+        if page.has_previous():
+            prev_url = "?{pkw}={n}".format(
+                pkw=self.page_kwarg,
+                n=page.previous_page_number())
+        else:
+            prev_url = None
+        if page.has_next():
+            next_url = "?{pkw}={n}".format(
+                pkw=self.page_kwarg,
+                n=page.next_page_number())
+        else:
+            next_url = None
+        context = {
+            'is_paginated':
+                page.has_other_pages(),
+            'next_page_url': next_url,
+            'paginator': paginator,
+            'previous_page_url': prev_url,
+            'post_list': page,
+        }
         return render(
-            request,
-            'blog/post_list.html',
-            {'post_list': Post.objects.all()})
+            request, self.template_name, context)
+
 
 
 class PostUpdate(View):

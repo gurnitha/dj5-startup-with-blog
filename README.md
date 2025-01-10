@@ -185,3 +185,29 @@
         Contact message display on terminal only ...
 
         :)
+
+#### 14. Pagination: A Tool for Navigation
+
+        new file:   Chapter_14_Pagination.ipynb
+        modified:   blog/admin.py
+        modified:   blog/templates/blog/post_list.html
+        modified:   blog/urls.py
+        modified:   blog/views.py
+        modified:   contact/urls.py
+        modified:   organizer/migrations/0008_alter_newslink_pub_date_alter_startup_founded_date.py
+        modified:   organizer/models.py
+        new file:   organizer/newslink.py
+        new file:   organizer/startup.py
+        new file:   organizer/tag.py
+        modified:   organizer/templates/organizer/startup_list.html
+        modified:   organizer/templates/organizer/tag_list.html
+        modified:   organizer/urls/newslink.py
+        modified:   organizer/urls/startup.py
+        modified:   organizer/urls/tag.py
+        modified:   organizer/views.py
+        modified:   requirements.txt
+        modified:   suorganizer/settings.py
+        new file:   suorganizer/settings_ori.py
+        modified:   suorganizer/urls.py
+
+        :)

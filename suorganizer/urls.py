@@ -13,7 +13,9 @@ Including another URLconf
     1. Add an import:  from blog import urls as blog_urls
     2. Add a URL to urlpatterns:  url(r'^blog/', include(blog_urls))
 """
+# from django.conf.urls import include, url
 from django.urls import path, include, re_path
+
 from django.contrib import admin
 
 from blog import urls as blog_urls
@@ -21,6 +23,11 @@ from contact import urls as contact_urls
 from organizer.urls import (
     newslink as newslink_urls,
     startup as startup_urls, tag as tag_urls)
+
+# new
+# from organizer import newslink as newslink_urls
+# from organizer import startup as startup_urls
+# from organizer import tag as tag_urls
 
 from .views import redirect_root
 
