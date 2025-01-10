@@ -119,8 +119,8 @@ class PostList(View):
         }
         return render(
             request, self.template_name, context)
-
         
+
 class PostUpdate(View):
     form_class = PostForm
     model = Post

@@ -97,7 +97,7 @@ def startup_detail(request, slug):
 
 class StartupList(View):
     page_kwarg = 'page'
-    paginate_by = 2  # 5 items per page
+    paginate_by = 5  # 5 items per page
     template_name = 'organizer/startup_list.html'
 
     def get(self, request):
@@ -219,7 +219,7 @@ class TagList(View):
         }
         return render(
             request, self.template_name, context)
-        
+
 
 class TagPageList(View):
     paginate_by = 5

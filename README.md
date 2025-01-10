@@ -231,3 +231,37 @@
         new file:   templates/flatpages/default.html
 
         :)
+
+#### 16. Serving Static Content with Django
+
+        modified:   blog/templates/blog/post_confirm_delete.html
+        modified:   blog/templates/blog/post_detail.html
+        modified:   blog/templates/blog/post_form.html
+        modified:   blog/templates/blog/post_form_update.html
+        modified:   blog/templates/blog/post_list.html
+        modified:   blog/views.py
+        modified:   contact/templates/contact/contact_form.html
+        modified:   organizer/admin.py
+        modified:   organizer/migrations/0008_alter_newslink_pub_date_alter_startup_founded_date.py
+        modified:   organizer/templates/organizer/base_organizer.html
+        modified:   organizer/templates/organizer/newslink_confirm_delete.html
+        modified:   organizer/templates/organizer/newslink_form.html
+        modified:   organizer/templates/organizer/newslink_form_update.html
+        modified:   organizer/templates/organizer/startup_confirm_delete.html
+        modified:   organizer/templates/organizer/startup_detail.html
+        modified:   organizer/templates/organizer/startup_form.html
+        modified:   organizer/templates/organizer/startup_form_update.html
+        modified:   organizer/templates/organizer/startup_list.html
+        modified:   organizer/templates/organizer/tag_confirm_delete.html
+        modified:   organizer/templates/organizer/tag_detail.html
+        modified:   organizer/templates/organizer/tag_form.html
+        modified:   organizer/templates/organizer/tag_form_update.html
+        modified:   organizer/templates/organizer/tag_list.html
+        modified:   organizer/views.py
+        new file:   static/site/logo.png
+        new file:   static/site/normalize.css
+        new file:   static/site/skeleton.css
+        new file:   static/site/style.css
+        modified:   suorganizer/settings.py
+        modified:   templates/base.html
+        modified:   templates/flatpages/default.html
