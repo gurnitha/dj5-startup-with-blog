@@ -100,3 +100,19 @@
         new file:   blog/forms.py
         new file:   organizer/forms.py
         new file:   organizer/migrations/0002_alter_newslink_pub_date_alter_startup_founded_date.py
+
+#### 8. DisplayingFormsinTemplates
+
+        new file:   blog/templates/blog/post_confirm_delete.html
+        new file:   blog/templates/blog/post_form.html
+        new file:   blog/templates/blog/post_form_update.html
+        modified:   organizer/migrations/0002_alter_newslink_pub_date_alter_startup_founded_date.py
+        new file:   organizer/templates/organizer/newslink_confirm_delete.html
+        new file:   organizer/templates/organizer/newslink_form.html
+        new file:   organizer/templates/organizer/newslink_form_update.html
+        new file:   organizer/templates/organizer/startup_confirm_delete.html
+        new file:   organizer/templates/organizer/startup_form.html
+        new file:   organizer/templates/organizer/startup_form_update.html
+        new file:   organizer/templates/organizer/tag_confirm_delete.html
+        new file:   organizer/templates/organizer/tag_form.html
+        new file:   organizer/templates/organizer/tag_form_update.html
