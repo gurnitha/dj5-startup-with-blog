@@ -138,3 +138,25 @@
         Note:
 
         Can do CRUD. :)
+
+#### 10. Revisiting Migrations
+
+        modified:   blog/admin.py
+        new file:   blog/migrations/0002_post_data.py
+        new file:   blog/migrations/0003_post_fields_startups_and_tags_optional.py
+        modified:   blog/models.py
+        modified:   organizer/admin.py
+        new file:   organizer/migrations/0002_tag_data.py
+        new file:   organizer/migrations/0003_startup_data.py
+        new file:   organizer/migrations/0004_newslink_data.py
+        new file:   organizer/migrations/0005_newslink_slug.py
+        new file:   organizer/migrations/0006_newslink_unique_together_slug_startup.py
+        new file:   organizer/migrations/0007_startup_tag_field_optional.py
+        new file:   organizer/migrations/0008_alter_newslink_pub_date_alter_startup_founded_date.py
+        modified:   organizer/models.py
+
+        Note:
+
+        CRUD + data
+
+        :)
