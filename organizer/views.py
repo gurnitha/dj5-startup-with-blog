@@ -219,7 +219,7 @@ class TagList(View):
         }
         return render(
             request, self.template_name, context)
-
+        
 
 class TagPageList(View):
     paginate_by = 5

@@ -211,3 +211,23 @@
         modified:   suorganizer/urls.py
 
         :)
+
+#### 15. Creating Webpages with Django Flatpages
+        
+        modified:   blog/urls.py
+        modified:   blog/views.py
+        new file:   core/__init__.py
+        new file:   core/migrations/0001_sites_data.py
+        new file:   core/migrations/0002_flatpages_data.py
+        new file:   core/migrations/__init__.py
+        modified:   organizer/admin.py
+        modified:   organizer/migrations/0008_alter_newslink_pub_date_alter_startup_founded_date.py
+        modified:   organizer/models.py
+        modified:   organizer/views.py
+        modified:   requirements.txt
+        modified:   suorganizer/settings.py
+        modified:   suorganizer/urls.py
+        modified:   templates/base.html
+        new file:   templates/flatpages/default.html
+
+        :)

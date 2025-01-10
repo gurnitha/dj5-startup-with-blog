@@ -19,6 +19,8 @@ BASE_DIR = Path(__file__).resolve().parent.parent
 # Quick-start development settings - unsuitable for production
 # See https://docs.djangoproject.com/en/5.1/howto/deployment/checklist/
 
+SITE_ID =1
+
 # SECURITY WARNING: keep the secret key used in production secret!
 SECRET_KEY = 'django-insecure-54lu^y$@+7&*%666ehk9kpg5(p2b204n$o0rzz$y9dzxd%*(oh'
 
@@ -38,6 +40,11 @@ INSTALLED_APPS = [
     'django.contrib.messages',
     'django.contrib.staticfiles',
 
+    # Django Flatpages
+    'django.contrib.flatpages', # new
+    'django.contrib.sites', # new
+
+
     # Third party apps
     "debug_toolbar",
     'django_extensions',
@@ -46,6 +53,7 @@ INSTALLED_APPS = [
     'organizer',
     'blog',
     'contact',
+    'core',
 ]
 
 MIDDLEWARE = [

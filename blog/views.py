@@ -77,7 +77,8 @@ def post_detail(request, year, month, slug):
 #             {'post_list': Post.objects.all()})
 
 
-# Adding pagination to post list
+# Pagination
+
 class PostList(View):
     page_kwarg = 'page'
     paginate_by = 2  # 5 items per page
@@ -119,8 +120,7 @@ class PostList(View):
         return render(
             request, self.template_name, context)
 
-
-
+        
 class PostUpdate(View):
     form_class = PostForm
     model = Post
