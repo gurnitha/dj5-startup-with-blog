@@ -15,8 +15,8 @@ Including another URLconf
 """
 from django.urls import path, include, re_path
 from django.contrib import admin
-from django.contrib.flatpages import \
-    urls as flatpage_urls
+from django.views.generic import (
+    RedirectView, TemplateView)
 
 from blog import urls as blog_urls
 from contact import urls as contact_urls
@@ -24,15 +24,19 @@ from organizer.urls import (
     newslink as newslink_urls,
     startup as startup_urls, tag as tag_urls)
 
-from .views import redirect_root
-
 urlpatterns = [
-    re_path(r'^$', redirect_root),
+    re_path(r'^$',
+        RedirectView.as_view(
+            pattern_name='blog_post_list',
+            permanent=False)),
+    re_path(r'^about/$',
+        TemplateView.as_view(
+            template_name='site/about.html'),
+        name='about_site'),
     path('admin/', admin.site.urls),
     re_path(r'^blog/', include(blog_urls)),
     re_path(r'^contact/', include(contact_urls)),
     re_path(r'^newslink/', include(newslink_urls)),
     re_path(r'^startup/', include(startup_urls)),
     re_path(r'^tag/', include(tag_urls)),
-    re_path(r'^', include(flatpage_urls)),
 ]

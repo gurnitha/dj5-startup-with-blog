@@ -3,7 +3,7 @@ from django.urls import path, include, re_path
 
 from ..views import (
     StartupCreate, StartupDelete, StartupList,
-    StartupUpdate, startup_detail)
+    StartupUpdate, StartupDetail)
 
 urlpatterns = [
     re_path(r'^$',
@@ -13,7 +13,7 @@ urlpatterns = [
         StartupCreate.as_view(),
         name='organizer_startup_create'),
     re_path(r'^(?P<slug>[\w\-]+)/$',
-        startup_detail,
+        StartupDetail.as_view(),
         name='organizer_startup_detail'),
     re_path(r'^(?P<slug>[\w\-]+)/delete/$',
         StartupDelete.as_view(),

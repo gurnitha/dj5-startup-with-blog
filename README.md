@@ -265,3 +265,27 @@
         modified:   suorganizer/settings.py
         modified:   templates/base.html
         modified:   templates/flatpages/default.html
+
+#### 17. Understanding Generic Class-Based Views
+
+        modified:   blog/admin.py
+        modified:   blog/models.py
+        new file:   blog/templates/blog/post_archive_month.html
+        new file:   blog/templates/blog/post_archive_year.html
+        modified:   blog/templates/blog/post_list.html
+        new file:   blog/templates/blog/post_list_ori.html
+        modified:   blog/urls.py
+        modified:   blog/views.py
+        modified:   organizer/admin.py
+        modified:   organizer/migrations/0008_alter_newslink_pub_date_alter_startup_founded_date.py
+        modified:   organizer/templates/organizer/tag_list.html
+        modified:   organizer/urls/startup.py
+        modified:   organizer/urls/tag.py
+        modified:   organizer/views.py
+        modified:   suorganizer/urls.py
+        modified:   templates/base.html
+        new file:   templates/site/about.html
+
+        Note:
+
+        Blog, Tags, and Startup has its own pagination. :)
