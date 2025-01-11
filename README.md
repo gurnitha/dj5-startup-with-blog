@@ -289,3 +289,24 @@
         Note:
 
         Blog, Tags, and Startup has its own pagination. :)
+
+#### 18. Advanced Generic Class-Based View Usage
+
+        modified:   blog/admin.py
+        modified:   blog/urls.py
+        new file:   blog/utils.py
+        modified:   blog/views.py
+        new file:   core/utils.py
+        modified:   organizer/forms.py
+        modified:   organizer/migrations/0008_alter_newslink_pub_date_alter_startup_founded_date.py
+        modified:   organizer/models.py
+        modified:   organizer/templates/organizer/base_organizer.html
+        modified:   organizer/templates/organizer/newslink_form.html
+        modified:   organizer/templates/organizer/startup_detail.html
+        modified:   organizer/templates/organizer/startup_list.html
+        modified:   organizer/templates/organizer/tag_list.html
+        modified:   organizer/urls/startup.py
+        modified:   organizer/urls/tag.py
+        modified:   organizer/utils.py
+        modified:   organizer/views.py
+        modified:   suorganizer/urls.py

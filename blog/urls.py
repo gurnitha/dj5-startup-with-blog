@@ -2,13 +2,9 @@ from django.urls import path, re_path
 
 from .views import (
     PostArchiveMonth, PostArchiveYear, PostCreate,
-    PostDelete, PostList, PostUpdate, post_detail,
-    # PostListView
-    )
+    PostDelete, PostDetail, PostList, PostUpdate)
 
 urlpatterns = [
-    # GCBV: ListView (does not work for archive)
-    # path('', PostListView.as_view(), name='blog_post_list'),
     re_path(r'^$',
         PostList.as_view(),
         name='blog_post_list'),
@@ -25,7 +21,7 @@ urlpatterns = [
     re_path(r'^(?P<year>\d{4})/'
         r'(?P<month>\d{1,2})/'
         r'(?P<slug>[\w\-]+)/$',
-        post_detail,
+        PostDetail.as_view(),
         name='blog_post_detail'),
     re_path(r'^(?P<year>\d{4})/'
         r'(?P<month>\d{1,2})/'

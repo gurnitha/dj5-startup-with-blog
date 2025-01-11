@@ -2,25 +2,16 @@
 from django.urls import path, include, re_path
 
 from ..views import (
-    TagCreate, TagDelete, 
-    # TagList, 
-    # TagPageList,
-    TagUpdate, TagDetail,
-    TagListView
-    )
+    TagCreate, TagDelete, TagDetail, TagList,
+    TagUpdate)
 
 urlpatterns = [
-    # GCBV: ListView (does not work for archive)
-    path('', TagListView.as_view(), name='organizer_tag_list'),
-    # re_path(r'^$',
-    #     TagList.as_view(),
-    #     name='organizer_tag_list'),
+    re_path(r'^$',
+        TagList.as_view(),
+        name='organizer_tag_list'),
     re_path(r'^create/$',
         TagCreate.as_view(),
         name='organizer_tag_create'),
-    # re_path(r'^(?P<page_number>\d+)/$',
-    #     TagPageList.as_view(),
-    #     name='organizer_tag_page'),
     re_path(r'^(?P<slug>[\w\-]+)/$',
         TagDetail.as_view(),
         name='organizer_tag_detail'),
